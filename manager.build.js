@@ -11,9 +11,9 @@ var buildManager = {
         harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
         upgraders = _.filter(Game.creeps, (creep) => creep.memory.role == 'upgrader');
         builders = _.filter(Game.creeps, (creep) => creep.memory.role == 'builder');
-        console.log('Harvesters: ' + this.harvesters.length);
-        console.log('Upgraders: ' + this.upgraders.length);
-        console.log('Builders: ' + this.builders.length);
+        console.log('Harvesters: ' + harvesters.length);
+        console.log('Upgraders: ' + upgraders.length);
+        console.log('Builders: ' + builders.length);
     },
 
     buildQueue: function(){
