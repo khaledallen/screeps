@@ -6,14 +6,17 @@ const MIN_HARV = 5;
 const LIM_BUILD = 4;
 
 var buildManager = {
+    harvesters: 0,
+    upgraders: 0,
+    builders: 0,
 
     buildReport: function(){
-        harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
-        upgraders = _.filter(Game.creeps, (creep) => creep.memory.role == 'upgrader');
-        builders = _.filter(Game.creeps, (creep) => creep.memory.role == 'builder');
-        console.log('Harvesters: ' + harvesters.length);
-        console.log('Upgraders: ' + upgraders.length);
-        console.log('Builders: ' + builders.length);
+        this.harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
+        this.upgraders = _.filter(Game.creeps, (creep) => creep.memory.role == 'upgrader');
+        this.builders = _.filter(Game.creeps, (creep) => creep.memory.role == 'builder');
+        console.log('Harvesters: ' + this.harvesters.length);
+        console.log('Upgraders: ' + this.upgraders.length);
+        console.log('Builders: ' + this.builders.length);
     },
 
     buildQueue: function(){
