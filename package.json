@@ -18,6 +18,7 @@
   "homepage": "https://github.com/khaledallen/screeps#readme",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-screeps": "^1.0.8"
   }
 }
