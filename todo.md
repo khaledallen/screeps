@@ -1,3 +1,4 @@
+- [ ] Try/Catch statements might help a lot
 - [ ] Alter the build queue so that it is actually a queue
 - [ ] Create a set up checklist
 - [ ] Create some standalone functions like 'harvest'
